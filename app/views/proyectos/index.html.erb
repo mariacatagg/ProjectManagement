@@ -1,2 +1,7 @@
-<h1>Proyectos#index</h1>
-<p>Find me in app/views/proyectos/index.html.erb</p>
+<h1>Lista de Proyectos </h1>
+<p>Aquí encontraras la lista de proyectos</p>
+<ul>
+<% @proyectos.each	do |proyecto| %>	
+      <li><%= proyecto.nombre, proyecto_path(proyecto) %></li>	
+<% end %>
+</ul>

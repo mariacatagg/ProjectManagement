@@ -1,12 +1,7 @@
 class ProyectosController < ApplicationController
   
   def index
-    @proyecto = Proyecto.all
-  end
-
-  def create
-    proyecto = Proyecto.create (proyecto_params)
-    redirect_to proyectos_path    
+    @proyectos = Proyecto.all
   end
 
   def show
@@ -18,5 +13,7 @@ class ProyectosController < ApplicationController
   end
 
   def edit
+
   end
+  
 end
